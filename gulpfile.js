@@ -19,7 +19,7 @@ gulp.task('browser-sync', function() {
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
-/* минимизируетм CSS-файлы и добавляем к ним конечный .min.css */
+/* минимизируем CSS-файлы и добавляем к ним конечный .min.css */
 gulp.task('styles', function(done) {
     gulp.src(['./*.css'])
     .pipe(concat('style.min.css'))             /* объединяем CSS-файлы и переименовываем их */
