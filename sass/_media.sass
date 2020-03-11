@@ -22,10 +22,20 @@
     .card
         &__text
             margin-left: 0
+    .design
+        background-color: $dark
+        &__section-title
+            color: $light
+        &__card
+            margin-bottom: 5.7rem
+    .section-title
+        &__text
+            color: $light
 @media screen and ( max-width: 570px)
     .container
         display: flex
         justify-content: center
+        flex-direction: column
     .menu
         width: 90%
     .contacts
@@ -44,6 +54,7 @@
             display: none
         &__content
             max-width: 22.86rem
+            margin: 0 auto
         &__text
             font-size: 1.29rem
             margin-bottom: 2.28rem

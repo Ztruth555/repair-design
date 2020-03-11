@@ -361,6 +361,9 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title__heading {
+      font-weight: normal;
+      font-style: normal; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -371,6 +374,17 @@ img {
         height: 2px;
         background-color: #E3B873;
         margin: 0 10px; }
+    .section-title__text {
+      display: inline-block;
+      max-width: 54rem;
+      margin-top: 1.1rem;
+      margin-bottom: 1.2rem;
+      text-transform: none;
+      font-family: 'FuturaBookC';
+      font-size: 1.31rem;
+      line-height: 1.929rem;
+      text-align: center;
+      color: #363636; }
 
 .header {
   position: fixed;
@@ -527,6 +541,7 @@ img {
 
 .card__title {
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   font-size: 1.29rem;
   margin-top: 0;
   margin-bottom: 0.7rem; }
@@ -546,9 +561,24 @@ img {
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
+  font-weight: normal;
   background-color: #E3B873;
   color: #fff;
   padding: 1.214rem 2.6rem; }
+
+.design {
+  position: relative; }
+  .design::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35rem;
+    background-color: #131313;
+    z-index: -1; }
+  .design__pricetag {
+    padding: 1.214rem 3.9rem; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -571,12 +601,21 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design {
+    background-color: #131313; }
+    .design__section-title {
+      color: #fff; }
+    .design__card {
+      margin-bottom: 5.7rem; }
+  .section-title__text {
+    color: #fff; } }
 
 @media screen and (max-width: 570px) {
   .container {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-direction: column; }
   .menu {
     width: 90%; }
   .contacts {
@@ -594,7 +633,8 @@ img {
     .hero__scroll-down {
       display: none; }
     .hero__content {
-      max-width: 22.86rem; }
+      max-width: 22.86rem;
+      margin: 0 auto; }
     .hero__text {
       font-size: 1.29rem;
       margin-bottom: 2.28rem; }
