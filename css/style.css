@@ -398,11 +398,12 @@ body {
 .phone {
   color: #E3B873; }
 
-.contacts__phone {
-  margin-right: 45px; }
-
-.contacts__button {
-  margin-left: 43px; }
+.contacts {
+  margin-right: -5rem; }
+  .contacts__phone {
+    margin-right: 45px; }
+  .contacts__button {
+    margin-left: 43px; }
 
 .hero {
   position: relative;
@@ -517,12 +518,16 @@ body {
   .container {
     display: flex;
     justify-content: center; }
-  .contacts__phone {
-    margin-right: 0;
-    color: #fff;
-    text-decoration: none; }
-  .contacts__button {
-    display: none; }
+  .menu {
+    width: 90%; }
+  .contacts {
+    margin-right: 0; }
+    .contacts__phone {
+      margin-right: 0;
+      color: #fff;
+      text-decoration: none; }
+    .contacts__button {
+      display: none; }
   .title {
     font-size: 1.64rem; }
   .hero {
