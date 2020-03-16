@@ -31,6 +31,18 @@
     .section-title
         &__text
             color: $light
+    .row
+        &-projects
+            flex-direction: column
+            align-items: center
+    .col
+        &-50
+            order: 1
+            width: 100%
+            font-size: 1rem
+            &:nth-last-of-type(1)
+                order: 0
+                margin-top: 0
 @media screen and ( max-width: 570px)
     .container
         display: flex
@@ -62,6 +74,10 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    .swiper
+        &-slide
+            &__text
+                flex-basis: 50%
 
 @media screen and ( max-height: 520px)
     .hero
