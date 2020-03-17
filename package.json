@@ -26,6 +26,7 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "clean-css": "^4.2.3",
-    "lodash.template": "^4.5.0"
+    "lodash.template": "^4.5.0",
+    "minimist": "^1.2.5"
   }
 }

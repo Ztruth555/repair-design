@@ -12,6 +12,14 @@
             display: none
         &__content
             margin-left: 0
+    .swiper
+        &-slide
+            &__text
+                flex-basis: 50%
+@media screen and ( min-width: 769px )
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+
 @media screen and ( max-width: 760px )
     .hero
         &::after
@@ -47,6 +55,38 @@
             &:nth-last-of-type(1)
                 order: 0
                 margin-top: 0
+@media screen and ( max-width: 571px )
+  .control
+    background-color: $dark
+    padding-bottom: 0
+    &__video
+      width: 100%
+      min-height: 202px
+    &__input-group
+      margin-bottom: 70px
+    &__form
+      flex-direction: column
+      margin-bottom: -24px
+    &__text
+      color: $light
+    &__policy-label
+      color: $light
+      margin-top: -73px
+      margin-bottom: 66px
+    &__button
+      order: 1
+      padding: 1rem 10.9rem
+      font-size: 1.3rem
+      line-height: 1.857
+      font-weight: 500
+      font-style: normal
+  .input
+    &--light
+      color: rgba($light, 0.5)
+  .video
+    &__play
+      width: 60px
+      height: 60px
 @media screen and ( max-width: 570px)
     .container
         display: flex

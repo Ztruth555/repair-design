@@ -349,7 +349,7 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -419,6 +419,8 @@ img {
     text-align: center; }
     .section-title--left {
       text-align: left; }
+    .section-title--light {
+      color: #fff; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
@@ -606,6 +608,9 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.projects {
+  padding-bottom: 30rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
@@ -645,6 +650,72 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/video-mask.jpg") no-repeat center;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  margin-bottom: 4.285rem;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 2.4rem; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30px; }
+
+.control__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -7px; }
+
+.control__button {
+  padding: 1.285rem 4.785rem; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -763,7 +834,13 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .swiper-slide__text {
+    flex-basis: 50%; } }
+
+@media screen and (min-width: 769px) {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    width: auto; } }
 
 @media screen and (max-width: 760px) {
   .hero::after {
@@ -794,6 +871,37 @@ img {
     .col-50:nth-last-of-type(1) {
       order: 0;
       margin-top: 0; } }
+
+@media screen and (max-width: 571px) {
+  .control {
+    background-color: #131313;
+    padding-bottom: 0; }
+    .control__video {
+      width: 100%;
+      min-height: 202px; }
+    .control__input-group {
+      margin-bottom: 70px; }
+    .control__form {
+      flex-direction: column;
+      margin-bottom: -24px; }
+    .control__text {
+      color: #fff; }
+    .control__policy-label {
+      color: #fff;
+      margin-top: -73px;
+      margin-bottom: 66px; }
+    .control__button {
+      order: 1;
+      padding: 1rem 10.9rem;
+      font-size: 1.3rem;
+      line-height: 1.857;
+      font-weight: 500;
+      font-style: normal; }
+  .input--light {
+    color: rgba(255, 255, 255, 0.5); }
+  .video__play {
+    width: 60px;
+    height: 60px; } }
 
 @media screen and (max-width: 570px) {
   .container {
