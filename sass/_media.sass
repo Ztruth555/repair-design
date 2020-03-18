@@ -91,8 +91,6 @@
       padding: 1rem 10.9rem
       font-size: 1.3rem
       line-height: 1.857
-      font-weight: 500
-      font-style: normal
   .input
     &--light
       color: rgba($light, 0.5)
@@ -135,8 +133,14 @@
         &-slide
             &__text
                 flex-basis: 50%
+    
 
 @media screen and ( max-height: 520px)
     .hero
         &__scroll-down
             display: none
+        
+@media ( min-width: 570px ) and ( max-width: 660px )
+    .control
+        &__form
+            min-width: 39rem

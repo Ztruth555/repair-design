@@ -363,7 +363,12 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-family: 'FuturaBookC';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  font-size: 1.143rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -372,6 +377,9 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+
+input {
+  outline: none; }
 
 .container {
   width: 85%;
@@ -908,9 +916,7 @@ img {
       order: 1;
       padding: 1rem 10.9rem;
       font-size: 1.3rem;
-      line-height: 1.857;
-      font-weight: 500;
-      font-style: normal; }
+      line-height: 1.857; }
   .input--light {
     color: rgba(255, 255, 255, 0.5); }
   .video__play {
@@ -954,3 +960,7 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media (min-width: 570px) and (max-width: 660px) {
+  .control__form {
+    min-width: 39rem; } }
