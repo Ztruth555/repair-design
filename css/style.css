@@ -382,7 +382,7 @@ input {
   outline: none; }
 
 .container {
-  width: 85%;
+  width: 95%;
   max-width: 1256px;
   margin: auto; }
 
@@ -781,6 +781,20 @@ img {
   .design__pricetag {
     padding: 1.214rem 3.9rem; }
 
+.footer-wrap {
+  background-color: #181818;
+  max-width: 64.07rem;
+  margin: auto;
+  padding: 2.5rem; }
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-bottom: 3.214rem; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -961,6 +975,6 @@ img {
   .hero__scroll-down {
     display: none; } }
 
-@media (min-width: 570px) and (max-width: 660px) {
-  .control__form {
-    min-width: 39rem; } }
+@media (min-width: 320px) and (max-width: 369px) {
+  .control__button {
+    min-width: 100%; } }
