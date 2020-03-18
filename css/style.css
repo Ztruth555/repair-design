@@ -350,6 +350,9 @@ template {
   color: #fff;
   padding: 0.5rem 0; }
   .input--light::placeholder {
+    font-family: 'Futura Medium', 'Arial', sans-serif;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
     color: #fff; }
 
 .policy__checkbox {
@@ -885,8 +888,19 @@ img {
       flex-direction: column;
       margin-bottom: -24px; }
     .control__text {
+      color: #fff;
+      font-size: 1.16rem;
+      margin-bottom: 2.16rem; }
+    .control__input::placeholder {
+      font-size: 1.5rem;
       color: #fff; }
+    .control__label {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.25rem;
+      line-height: 1.66rem;
+      margin-bottom: 0.58rem; }
     .control__policy-label {
+      justify-content: left;
       color: #fff;
       margin-top: -73px;
       margin-bottom: 66px; }
