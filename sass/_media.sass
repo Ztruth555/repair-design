@@ -98,6 +98,29 @@
     &__play
       width: 60px
       height: 60px
+@media screen and ( max-width: 617px )
+    .control
+        &__form
+            flex-direction: column
+            margin-bottom: -24px
+        &__text
+            // color: $dark
+            font-size: 1.32rem
+            margin-bottom: 2.16rem
+        &__input
+            margin-bottom: 1rem
+            &::placeholder
+                font-size: 1.5rem
+        &__label
+            font-size: 1.25rem
+            line-height: 1.66rem
+            margin-bottom: 0.58rem
+        &__button
+            order: 1
+            font-size: 1.3rem
+            line-height: 1.857
+            padding: 1rem
+        
 @media screen and ( max-width: 570px)
     .container
         display: flex

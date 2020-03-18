@@ -506,12 +506,11 @@ img {
 .phone {
   color: #E3B873; }
 
-.contacts {
-  margin-right: -5rem; }
-  .contacts__phone {
-    margin-right: 45px; }
-  .contacts__button {
-    margin-left: 43px; }
+.contacts__phone {
+  margin-right: 45px; }
+
+.contacts__button {
+  margin-left: 43px; }
 
 .hero {
   position: relative;
@@ -936,6 +935,27 @@ img {
   .video__play {
     width: 60px;
     height: 60px; } }
+
+@media screen and (max-width: 617px) {
+  .control__form {
+    flex-direction: column;
+    margin-bottom: -24px; }
+  .control__text {
+    font-size: 1.32rem;
+    margin-bottom: 2.16rem; }
+  .control__input {
+    margin-bottom: 1rem; }
+    .control__input::placeholder {
+      font-size: 1.5rem; }
+  .control__label {
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+    margin-bottom: 0.58rem; }
+  .control__button {
+    order: 1;
+    font-size: 1.3rem;
+    line-height: 1.857;
+    padding: 1rem; } }
 
 @media screen and (max-width: 570px) {
   .container {
