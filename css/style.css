@@ -386,6 +386,9 @@ input.invalid {
 label.invalid {
   color: tomato; }
 
+label #user-name-error.invalid {
+  color: tomato; }
+
 .container {
   width: 95%;
   max-width: 1256px;
@@ -991,6 +994,7 @@ img {
     font-size: 1.32rem;
     margin-bottom: 2.16rem; }
   .control__input {
+    color: #fff;
     margin-bottom: 1rem; }
     .control__input::placeholder {
       font-size: 1.5rem; }
@@ -1002,7 +1006,9 @@ img {
     order: 1;
     font-size: 1.3rem;
     line-height: 1.857;
-    padding: 1rem; } }
+    padding: 1rem; }
+  .footer__input {
+    color: #fff; } }
 
 @media screen and (max-width: 570px) {
   .container {

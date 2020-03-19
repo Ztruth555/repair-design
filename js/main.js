@@ -91,6 +91,7 @@ $(document).ready(function () {
           email: true
         }
       }, // сообщения
+      errorElement: "div",
       errorClass: "invalid",
       messages: {
         userName: {
@@ -122,6 +123,7 @@ $(document).ready(function () {
           required: true,
         }
       },
+      errorElement: "div",
       errorClass: "invalid",
       messages: {
         userName: {
@@ -149,6 +151,7 @@ $(document).ready(function () {
           required: true,
         }
       },
+      errorElement: "div",
       errorClass: "invalid",
       messages: {
         userName: {
@@ -164,6 +167,6 @@ $(document).ready(function () {
 
     //маска для номера телефона
 
-    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "+7 (___) ___-__-__"});
     
   });
