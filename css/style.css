@@ -380,13 +380,12 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-input.invalid {
-  border-bottom: 1px solid tomato; }
+input {
+  outline: none; }
+  input.invalid {
+    border-bottom: 1px solid tomato; }
 
-label.invalid {
-  color: tomato; }
-
-label #user-name-error.invalid {
+.invalid {
   color: tomato; }
 
 .container {
