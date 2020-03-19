@@ -833,6 +833,38 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.092rem; }
+    .footer__contacts-text {
+      max-width: 35rem;
+      font-family: 'Yeseva One', cursive;
+      font-weight: normal;
+      font-size: 1.4286rem;
+      line-height: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: #E3B873; }
+      .footer__contacts-text-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        background-color: #E3B873;
+        border-radius: 50%; }
+        .footer__contacts-text-link-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          min-width: 5.07rem; }
+  .footer__map {
+    margin: 0 auto 4rem;
+    max-width: 66rem;
+    min-height: 33.214rem;
+    filter: grayscale(100%); }
 
 .modal {
   opacity: 0;
