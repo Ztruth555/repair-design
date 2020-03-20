@@ -174,11 +174,11 @@ $(document).ready(function () {
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
               center: [47.244900, 39.723128],
-              zoom: 9
-          }, {
+              zoom: 16
+            }, {
               searchControlProvider: 'yandex#search'
-          }),
-  
+          });
+          myMap.behaviors.disable("scrollZoom");
           // Создаём макет содержимого.
           MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
               '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
