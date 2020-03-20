@@ -619,6 +619,7 @@ img {
   text-transform: uppercase;
   font-size: 2.857rem;
   line-height: 1.3;
+  font-weight: normal;
   margin-bottom: 1rem; }
   .title--primary {
     color: #E3B873; }
@@ -790,7 +791,8 @@ img {
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  margin-top: 25rem; }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
@@ -969,9 +971,11 @@ img {
       margin-top: 0; }
   .footer {
     padding-top: 0;
-    background: #131313; }
+    background: #131313;
+    margin-top: 0; }
     .footer__wrap {
-      background: #131313; }
+      background: #131313;
+      margin-top: 0; }
     .footer__input-group {
       flex-basis: 100%; } }
 
