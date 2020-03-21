@@ -775,7 +775,6 @@ img {
   padding: 1.214rem 2.6rem; }
 
 .design {
-  padding-bottom: 30rem;
   position: relative; }
   .design::after {
     content: '';
@@ -863,6 +862,7 @@ img {
   .footer__map {
     margin: 0 auto 4rem;
     max-width: 66rem;
+    width: 100%;
     min-height: 33.214rem;
     filter: grayscale(100%); }
 
