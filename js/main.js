@@ -71,7 +71,7 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    // Валидация формы
+    // Валидация формы Modal
 
     $('.modal__form').validate({
       errorClass: "invalid",
@@ -89,7 +89,8 @@ $(document).ready(function () {
         userEmail: {
           required: true,
           email: true
-        }
+        },
+        modalCheckbox: "required"
       }, // сообщения
       errorElement: "div",
       errorClass: "invalid",
@@ -102,12 +103,15 @@ $(document).ready(function () {
         userPhone: {
           required: "Телефон обязателен",
         },
+        modalCheckbox: "Поставьте галочку",
         userEmail: {
           required: "Обязательно укажите email",
           email: "Введите в формате: name@domain.com"
         }
       }
     });
+
+    // Валидация формы footer
 
     $('.footer__form').validate({
       rules: {
@@ -118,7 +122,9 @@ $(document).ready(function () {
         },
         userPhone: {
           required: true,
+          minlength: 17
         },
+        footerCheckbox: "required",
         userQuestion: {
           required: true,
         }
@@ -134,11 +140,14 @@ $(document).ready(function () {
         userPhone:{
           required: "Телефон обязателен",
         },
+        footerCheckbox: "Нажмите, чтобы согласиться",
         userQuestion: {
           required: "Обязательно напишите вопрос",
         }
       }
     });
+
+    // Валидация формы control
 
     $('.control__form').validate({
       rules: {
@@ -149,7 +158,9 @@ $(document).ready(function () {
         },
         userPhone: {
           required: true,
-        }
+          minlength: 17
+        },
+        controlCheckbox: "required"
       },
       errorElement: "div",
       errorClass: "invalid",
@@ -161,7 +172,9 @@ $(document).ready(function () {
         },
         userPhone:{
           required: "Телефон обязателен",
-        }
+          
+        },
+        controlCheckbox: "Поставьте галочку"
       }
     });
 
