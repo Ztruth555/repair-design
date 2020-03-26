@@ -919,6 +919,63 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.ajax-success {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 299;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5); }
+  .ajax-success--visible {
+    opacity: 1;
+    visibility: visible; }
+  .ajax-success__wrap {
+    position: relative;
+    padding: 4rem 3.49rem 4rem 3.5rem;
+    background: #131313 url("../img/modal_bg.svg") no-repeat center/100%;
+    background-size: cover;
+    color: #fff;
+    max-width: 36.142rem; }
+  .ajax-success__close {
+    position: absolute;
+    margin: 0.785rem 0.857rem 0px 0px;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    background: transparent url(../img/close.svg) no-repeat center;
+    border: none;
+    cursor: pointer; }
+  .ajax-success__title {
+    margin-top: 0px;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase; }
+  .ajax-success__subtitle {
+    display: block;
+    font-size: 18px; }
+  .ajax-success__link {
+    display: flex;
+    align-items: center;
+    margin-top: 40px; }
+  .ajax-success__text {
+    display: block;
+    font-size: 18px; }
+  .ajax-success__vk-link {
+    display: block;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/vk.png) no-repeat center; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }

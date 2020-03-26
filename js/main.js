@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }); 
 */
 
+
+
 $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
@@ -28,6 +30,19 @@ $(document).ready(function () {
     closelBtn.on('click', function () {
       modal.toggleClass('modal--visible');
     });
+
+    var ajaxSuccessModal = $('.ajax-success'),
+        ajaxSuccessModalBtn = $('[data-toggle=ajax-success-close]'),
+        ajaxSuccessModalcloseBtn = $('.ajax-success__close');
+
+        ajaxSuccessModalcloseBtn.on('click', function () {
+          ajaxSuccessModal.removeClass('ajax-success--visible');
+        });
+        $(document).on('keydown', function (event) {
+          if (event.code == 'Escape') {
+            ajaxSuccessModal.removeClass('ajax-success--visible');
+        }
+      });
     
     jQuery(function($){
       modal.mouseup(function (e){ 
@@ -108,6 +123,23 @@ $(document).ready(function () {
           required: "Обязательно укажите email",
           email: "Введите в формате: name@domain.com"
         }
+      },
+      submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          ajaxSuccessModal.addClass('ajax-success--visible');
+          // document.location.href = "thanks.html";
+        },
+        // error: function (response) {  
+        //   console.error('Ошибка запроса ' + response);
+        // }
+      });
       }
     });
 
@@ -144,7 +176,24 @@ $(document).ready(function () {
         userQuestion: {
           required: "Обязательно напишите вопрос",
         }
-      }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+            ajaxSuccessModal.addClass('ajax-success--visible');
+            // document.location.href = "thanks.html";
+          },
+          // error: function (response) {  
+          //   console.error('Ошибка запроса ' + response);
+          // }
+        });
+        }
     });
 
     // Валидация формы control
@@ -175,7 +224,24 @@ $(document).ready(function () {
           
         },
         controlCheckbox: "Поставьте галочку"
-      }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+            ajaxSuccessModal.addClass('ajax-success--visible');
+            // document.location.href = "thanks.html";
+          },
+          // error: function (response) {  
+          //   console.error('Ошибка запроса ' + response);
+          // }
+        });
+        }
     });
 
     //маска для номера телефона
