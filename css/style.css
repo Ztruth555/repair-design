@@ -88,6 +88,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -349,6 +350,26 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
+  .input--light::-webkit-input-placeholder {
+    font-family: 'Futura Medium', 'Arial', sans-serif;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    color: #fff; }
+  .input--light::-moz-placeholder {
+    font-family: 'Futura Medium', 'Arial', sans-serif;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    color: #fff; }
+  .input--light:-ms-input-placeholder {
+    font-family: 'Futura Medium', 'Arial', sans-serif;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    color: #fff; }
+  .input--light::-ms-input-placeholder {
+    font-family: 'Futura Medium', 'Arial', sans-serif;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    color: #fff; }
   .input--light::placeholder {
     font-family: 'Futura Medium', 'Arial', sans-serif;
     font-size: 1.285rem;
@@ -415,14 +436,16 @@ input {
   z-index: 999; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: none; }
 
 html {
   font-size: 14px; }
 
 body {
   font-family: 'Futura Book',sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  outline: none; }
 
 img {
   max-width: 100%; }
@@ -478,6 +501,9 @@ img {
       font-size: 1.31rem;
       line-height: 1.929rem;
       text-align: center; }
+
+input {
+  outline: none; }
 
 .header {
   position: fixed;
@@ -863,6 +889,7 @@ img {
     max-width: 66rem;
     width: 100%;
     min-height: 33.214rem;
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
 
 .modal {
@@ -1051,6 +1078,18 @@ img {
       color: #fff;
       font-size: 1.16rem;
       margin-bottom: 2.16rem; }
+    .control__input::-webkit-input-placeholder {
+      font-size: 1.5rem;
+      color: #fff; }
+    .control__input::-moz-placeholder {
+      font-size: 1.5rem;
+      color: #fff; }
+    .control__input:-ms-input-placeholder {
+      font-size: 1.5rem;
+      color: #fff; }
+    .control__input::-ms-input-placeholder {
+      font-size: 1.5rem;
+      color: #fff; }
     .control__input::placeholder {
       font-size: 1.5rem;
       color: #fff; }
@@ -1085,6 +1124,14 @@ img {
   .control__input {
     color: #fff;
     margin-bottom: 1rem; }
+    .control__input::-webkit-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::-moz-placeholder {
+      font-size: 1.5rem; }
+    .control__input:-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::-ms-input-placeholder {
+      font-size: 1.5rem; }
     .control__input::placeholder {
       font-size: 1.5rem; }
   .control__label {
