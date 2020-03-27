@@ -136,9 +136,10 @@ $(document).ready(function () {
           ajaxSuccessModal.addClass('ajax-success--visible');
           // document.location.href = "thanks.html";
         },
-        // error: function (response) {  
-        //   console.error('Ошибка запроса ' + response);
-        // }
+        error: function (response) {  
+          console.error('Ошибка запроса ' + response);
+          ym('61399507', 'reachGoal', 'button'); return true;
+        }
       });
       }
     });
