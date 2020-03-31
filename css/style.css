@@ -388,7 +388,8 @@ template {
   font-style: normal;
   font-weight: normal;
   line-height: 22px;
-  font-size: 1.142rem; }
+  font-size: 1.142rem;
+  justify-content: center; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -418,11 +419,12 @@ input {
   align-items: flex-start;
   justify-content: space-between; }
 
-.col-30 {
-  flex-basis: 30%; }
-
-.col-50 {
-  width: 50%; }
+.col {
+  flex-basis: 32%; }
+  .col-30 {
+    flex-basis: 32%; }
+  .col-50 {
+    width: 50%; }
 
 #upbutton {
   background: url("../img/arrow-up.png") no-repeat top left;
@@ -528,7 +530,7 @@ input {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 2.54rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -538,6 +540,8 @@ input {
 
 .contacts__phone {
   margin-right: 45px; }
+  .contacts__phone:hover {
+    color: #fff; }
 
 .contacts__button {
   margin-left: 43px; }
@@ -631,6 +635,8 @@ input {
     transform: rotate(90deg);
     line-height: 0.8;
     font-size: 1.1rem; }
+    .instagram__link:hover {
+      color: #fff; }
     .instagram__link::after {
       content: '';
       width: 50px;
@@ -752,7 +758,8 @@ input {
 
 .control__policy {
   flex-basis: 100%;
-  margin-top: 1.2rem; }
+  margin-top: 1.2rem;
+  margin-bottom: 3.6rem; }
   .control__policy-label {
     justify-content: center; }
 
@@ -871,6 +878,12 @@ input {
       text-align: center;
       text-transform: uppercase;
       color: #E3B873; }
+      .footer__contacts-text--phone {
+        color: #E3B873;
+        text-decoration: none;
+        transition: color 0.2s; }
+        .footer__contacts-text--phone:hover {
+          color: #fff; }
       .footer__contacts-text-link {
         display: flex;
         justify-content: center;
@@ -884,13 +897,6 @@ input {
           justify-content: space-between;
           align-items: center;
           min-width: 5.07rem; }
-  .footer__map {
-    margin: 0 auto 4rem;
-    max-width: 66rem;
-    width: 100%;
-    min-height: 33.214rem;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
 
 .modal {
   opacity: 0;
@@ -1070,7 +1076,7 @@ input {
       width: 100%;
       min-height: 202px; }
     .control__input-group {
-      margin-bottom: 70px; }
+      margin-bottom: 26px; }
     .control__form {
       flex-direction: column;
       margin-bottom: -24px; }
@@ -1098,11 +1104,10 @@ input {
       font-size: 1.25rem;
       line-height: 1.66rem;
       margin-bottom: 0.58rem; }
-    .control__policy-label {
+    .control__policy__label {
       justify-content: left;
       color: #fff;
-      margin-top: -73px;
-      margin-bottom: 66px; }
+      margin-top: -47px; }
     .control__button {
       order: 1;
       padding: 1rem 10.9rem;

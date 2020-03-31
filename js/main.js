@@ -248,6 +248,15 @@ $(document).ready(function () {
     //маска для номера телефона
 
     $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "+7 (___) ___-__-__"});
+
+    $("#menu, #footer-menu, #hero").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top - 110}, 1500);
+    });
+  
+    });
     
 
     // содание Yandex-карты
@@ -285,11 +294,3 @@ $(document).ready(function () {
           .add(myPlacemark);
   });
 
-  $("#menu, #footer-menu, #hero").on("click","a", function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top - 110}, 1500);
-  });
-
-  });
