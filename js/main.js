@@ -247,7 +247,7 @@ $(document).ready(function () {
 
     //маска для номера телефона
 
-    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "+7 (___) ___-__-__"});
+    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "+7 (999) 999-99-99"});
 
     $("#menu, #footer-menu, #hero").on("click","a", function (event) {
       event.preventDefault();
