@@ -247,7 +247,7 @@ $(document).ready(function () {
 
     //маска для номера телефона
 
-    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "+7 (999) 999-99-99"});
+    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "Ваш номер телефона:"});
 
     $("#menu, #footer-menu, #hero").on("click","a", function (event) {
       event.preventDefault();
@@ -258,8 +258,26 @@ $(document).ready(function () {
   
     });
     
+    // Видео с сайта
+    var player;
+
+    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '460',
+        width: '100%',
+        videoId: 'RHzzLqJWqHs',
+        events: {
+          'onReady': videoPlay,
+        }
+      })
+    })
+
+    function videoPlay(event) { 
+      event.target.playVideo();
+     }
 
     // содание Yandex-карты
+
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
               center: [47.244900, 39.723128],
