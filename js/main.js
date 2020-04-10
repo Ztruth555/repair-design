@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }); 
 */
 
-
+// модальное окно 
 
 $(document).ready(function () {
     var modal = $('.modal'),
@@ -29,6 +29,14 @@ $(document).ready(function () {
     });
     closelBtn.on('click', function () {
       modal.toggleClass('modal--visible');
+    });
+    $(document).on('keydown', function (event) {
+      if (event.code == 'Escape') {
+        $('.modal__form')[0].reset();
+        $('div.invalid').remove();
+        $('.modal__form').find('.invalid').removeClass('invalid');
+        modal.removeClass('modal--visible');
+      }
     });
 
     var ajaxSuccessModal = $('.ajax-success'),
@@ -49,7 +57,9 @@ $(document).ready(function () {
           if (!modalHidden.is(e.target) && modalHidden.has(e.target).length === 0) { 
             modal.toggleClass('modal--visible'); 
           }
-      });
+    });
+      
+      // Slider
 
       var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
@@ -67,12 +77,16 @@ $(document).ready(function () {
       var prev = $('.swiper-button-prev');
       var bullets = $('.swiper-pagination');
 
-      next.css('left', prev.width() + 10 + bullets.width() +10)
-      bullets.css('left', prev.width() + 10)
+      next.css('left', prev.width() + 10 + bullets.width() +30)
+      bullets.css('left', prev.width() + 20)
+
+      new WOW().init();
 
 
     });
     
+    // Кнопка вверх
+
     $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
           if ($('#upbutton').is(':hidden')) {
@@ -83,8 +97,6 @@ $(document).ready(function () {
     $('#upbutton').click(function() {
         $('html, body').stop().animate({scrollTop : 0}, 800);
     });
-
-    new WOW().init();
 
     // Валидация формы Modal
 
@@ -245,11 +257,13 @@ $(document).ready(function () {
         }
     });
 
-    //маска для номера телефона
+    // Маска для номера телефона
 
     $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "Ваш номер телефона:"});
 
-    $("#menu, #footer-menu, #hero").on("click","a", function (event) {
+    // Плавный переход по якорынм ссылкам
+
+    $("#menu, #footer-menu, #hero, #menu-nav").on("click","a", function (event) {
       event.preventDefault();
       var id  = $(this).attr('href'),
           top = $(id).offset().top;
@@ -259,6 +273,7 @@ $(document).ready(function () {
     });
     
     // Видео с сайта
+
     var player;
 
     $('.video__play').on('click', function onYouTubeIframeAPIReady() {
@@ -274,9 +289,9 @@ $(document).ready(function () {
 
     function videoPlay(event) { 
       event.target.playVideo();
-     }
+    }
 
-    // содание Yandex-карты
+    // Создание Yandex-карты
 
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
