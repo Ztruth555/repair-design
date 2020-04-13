@@ -28,6 +28,8 @@
     font-size: 1.285rem
     color: $light
     padding: 0.5rem 0
+    &-group
+        position: relative
     &--light
         &::placeholder
             font-family: 'Futura MediumC', 'Arial', sans-serif
@@ -62,9 +64,47 @@
             margin-right: 0.64rem
         &--center
             justify-content: center
-input
-    &.invalid
-        border-bottom: 1px solid tomato 
-    outline: none
+// input
+//     &.invalid
+//         border-bottom: 1px solid tomato 
+//     outline: none
+// .invalid
+//     color: tomato
+
+em.invalid
+    color: red
+    font-size: 1.2rem
+    border-bottom: none
+    position: absolute
+    top: 60px
+div.invalid
+    color: red
+    border-bottom: none
+    position: absolute
+    top: 60px
+    &:first-child
+      margin-left: 100px
+blockquote.invalid
+    color: red
+    border-bottom: none
+    position: absolute
+    margin: 0
+    margin-top: 50px
+    margin-left: 50px
+
+
 .invalid
-    color: tomato
+  border-bottom: 1px solid tomato
+
+em#modalCheckbox-error
+    position: absolute
+    top: 450px
+    left: 50px
+#footerCheckbox-error
+    position: absolute
+    top: 45px
+    left: 135px
+#controlCheckbox-error
+    position: absolute
+    top: -10px
+    left: 286px

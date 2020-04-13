@@ -111,6 +111,7 @@ $(document).ready(function () {
         },
         userPhone: {
           required:true,
+          minlength: 17
         },
         // правило-объект (блок)
         userEmail: {
@@ -118,9 +119,10 @@ $(document).ready(function () {
           email: true
         },
         modalCheckbox: "required"
-      }, // сообщения
-      errorElement: "div",
+      }, 
       errorClass: "invalid",
+      errorElement: "em",
+      // сообщения
       messages: {
         userName: {
           required:"Имя обязательно",
@@ -129,6 +131,7 @@ $(document).ready(function () {
         } ,
         userPhone: {
           required: "Телефон обязателен",
+          minlength: "Введите корректный номер"
         },
         modalCheckbox: "Поставьте галочку",
         userEmail: {
@@ -174,8 +177,8 @@ $(document).ready(function () {
           required: true,
         }
       },
-      errorElement: "div",
       errorClass: "invalid",
+      errorElement: "div",
       messages: {
         userName: {
           required: "Имя обязательно",
@@ -224,8 +227,8 @@ $(document).ready(function () {
         },
         controlCheckbox: "required"
       },
-      errorElement: "div",
       errorClass: "invalid",
+      errorElement: "blockquote",
       messages: {
         userName: {
           required: "Имя обязательно",
@@ -259,7 +262,7 @@ $(document).ready(function () {
 
     // Маска для номера телефона
 
-    $('[type=tel]').mask('+7(900) 00-00-000', {placeholder: "Ваш номер телефона:"});
+    $('[type=tel]').mask('+7(900) 000-00-00', {placeholder: "Ваш номер телефона:"});
 
     // Плавный переход по якорынм ссылкам
 

@@ -364,6 +364,8 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
+  .input-group {
+    position: relative; }
   .input--light::-webkit-input-placeholder {
     font-family: 'Futura MediumC', 'Arial', sans-serif;
     font-size: 1.285rem;
@@ -415,13 +417,46 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-input {
-  outline: none; }
-  input.invalid {
-    border-bottom: 1px solid tomato; }
+em.invalid {
+  color: red;
+  font-size: 1.2rem;
+  border-bottom: none;
+  position: absolute;
+  top: 60px; }
+
+div.invalid {
+  color: red;
+  border-bottom: none;
+  position: absolute;
+  top: 60px; }
+  div.invalid:first-child {
+    margin-left: 100px; }
+
+blockquote.invalid {
+  color: red;
+  border-bottom: none;
+  position: absolute;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px; }
 
 .invalid {
-  color: tomato; }
+  border-bottom: 1px solid tomato; }
+
+em#modalCheckbox-error {
+  position: absolute;
+  top: 450px;
+  left: 50px; }
+
+#footerCheckbox-error {
+  position: absolute;
+  top: 45px;
+  left: 135px; }
+
+#controlCheckbox-error {
+  position: absolute;
+  top: -10px;
+  left: 286px; }
 
 .container {
   width: 90%;
@@ -467,7 +502,7 @@ img {
   max-width: 100%; }
 
 .section {
-  padding: 60px; }
+  padding: 60px 0px; }
   .section--dark {
     background-color: #131313;
     color: #fff; }
@@ -536,9 +571,14 @@ input {
   align-items: center; }
 
 .logo {
-  font-size: 1.075rem;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'FuturaDemiC';
+  line-height: 1.142rem;
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem; }
 
 .nav__item {
   color: #fff;
