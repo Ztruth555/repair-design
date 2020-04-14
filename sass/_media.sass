@@ -4,6 +4,10 @@
     .nav
         &__item
             margin-right: 1rem
+    .swiper
+        &-slide
+            img
+                width: 100%
 @media screen and ( max-width: 992px)
     .nav
         display: none
@@ -16,6 +20,10 @@
         &-slide
             &__text
                 flex-basis: 50%
+            img
+                width: 100%
+    // blockquote.invalid
+    //     top: -10px
 @media screen and ( min-width: 769px )
   .swiper-container-horizontal>.swiper-pagination-bullets
     width: auto
@@ -23,6 +31,9 @@
 @media screen and ( max-width: 760px )
     .hero
         &::after
+            display: none
+    .hero
+        &__scroll-down
             display: none
     .row
         flex-direction: column
@@ -71,10 +82,13 @@
 @media screen and ( max-width: 571px )
   .control
     background-color: $dark
+    padding-top: 1rem
     padding-bottom: 0
     &__video
       width: 100%
       min-height: 202px
+      &__play
+        width: 20%
     &__input-group
       margin-bottom: 26px
     &__form
@@ -141,6 +155,11 @@
             display: none
         &__contacts
             order: 1
+    blockquote.invalid
+        margin-left: 0
+        margin: 0      
+    #controlCheckbox-error
+        left: 0
         
         
 @media screen and ( max-width: 570px)
