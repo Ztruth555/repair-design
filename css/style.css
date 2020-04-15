@@ -429,7 +429,7 @@ div.invalid {
   color: red;
   border-bottom: none;
   position: absolute;
-  top: 60px; }
+  top: 50px; }
   div.invalid:first-child {
     margin-left: 100px; }
 
@@ -1109,7 +1109,9 @@ input {
   .nav__item {
     margin-right: 1rem; }
   .swiper-slide img {
-    width: 100%; } }
+    width: 100%; }
+  #controlCheckbox-error {
+    left: 244px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1231,7 +1233,7 @@ input {
     margin-bottom: 2.16rem; }
   .control__input {
     color: #fff;
-    margin-bottom: 1rem; }
+    margin-bottom: 3rem; }
     .control__input::-webkit-input-placeholder {
       font-size: 1.5rem; }
     .control__input::-moz-placeholder {
@@ -1242,6 +1244,8 @@ input {
       font-size: 1.5rem; }
     .control__input::placeholder {
       font-size: 1.5rem; }
+    .control__input-group {
+      position: relative; }
   .control__label {
     font-size: 1.25rem;
     line-height: 1.66rem;
@@ -1251,6 +1255,8 @@ input {
     font-size: 1.3rem;
     line-height: 1.857;
     padding: 1rem; }
+  .control__policy {
+    position: relative; }
   .footer__input {
     color: #fff; }
   .footer__menu {
@@ -1258,10 +1264,13 @@ input {
   .footer__contacts {
     order: 1; }
   blockquote.invalid {
-    margin-left: 0;
-    margin: 0; }
+    position: absolute;
+    left: -48px;
+    top: 20px; }
   #controlCheckbox-error {
-    left: 0; } }
+    position: absolute;
+    left: -50px;
+    top: -50px; } }
 
 @media screen and (max-width: 570px) {
   .container {
@@ -1295,7 +1304,12 @@ input {
       min-width: 22.86rem;
       margin-bottom: 1.85rem; }
   .swiper-slide__text {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .footer__contacts-link-img {
+    margin-top: 23px; }
+  .footer__contacts-text {
+    max-width: 320px;
+    margin-bottom: 0; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

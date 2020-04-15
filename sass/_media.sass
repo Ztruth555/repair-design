@@ -8,6 +8,8 @@
         &-slide
             img
                 width: 100%
+    #controlCheckbox-error
+        left: 244px
 @media screen and ( max-width: 992px)
     .nav
         display: none
@@ -90,7 +92,7 @@
       &__play
         width: 20%
     &__input-group
-      margin-bottom: 26px
+        margin-bottom: 26px
     &__form
       flex-direction: column
       margin-bottom: -24px
@@ -136,9 +138,11 @@
             margin-bottom: 2.16rem
         &__input
             color: $light
-            margin-bottom: 1rem
+            margin-bottom: 3rem
             &::placeholder
                 font-size: 1.5rem
+            &-group
+                position: relative
         &__label
             font-size: 1.25rem
             line-height: 1.66rem
@@ -148,6 +152,8 @@
             font-size: 1.3rem
             line-height: 1.857
             padding: 1rem
+        &__policy
+            position: relative
     .footer
         &__input
             color: $light
@@ -156,10 +162,13 @@
         &__contacts
             order: 1
     blockquote.invalid
-        margin-left: 0
-        margin: 0      
+        position: absolute
+        left: -48px
+        top: 20px
     #controlCheckbox-error
-        left: 0
+        position: absolute
+        left: -50px
+        top: -50px
         
         
 @media screen and ( max-width: 570px)
@@ -197,6 +206,14 @@
         &-slide
             &__text
                 flex-basis: 50%
+    .footer
+        &__contacts
+            &-link
+                &-img
+                    margin-top: 23px
+            &-text
+                max-width: 320px
+                margin-bottom: 0
 
 @media screen and ( max-height: 520px)
     .hero
