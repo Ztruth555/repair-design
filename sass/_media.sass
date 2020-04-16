@@ -188,6 +188,10 @@
             display: none
     .title
         font-size: 1.64rem
+    .control
+        &__form
+            width: 23rem
+            // margin: 0
     .hero
         height: auto
         &__scroll-down
@@ -212,13 +216,36 @@
                 &-img
                     margin-top: 23px
             &-text
+                font-size: 16px
                 max-width: 320px
                 margin-bottom: 0
+    #footerCheckbox-error
+        left: 42px
+    
 
 @media screen and ( max-height: 520px)
     .hero
         &__scroll-down
             display: none
+    .modal
+        &__title
+            margin-bottom: 1rem
+        &__dialog
+            max-height: 32rem
+            max-width: 30rem
+        &__input-group
+            margin-bottom: 0
+            // width: 20rem
+        &__input
+            margin-bottom: 0
+        &__policy
+            margin-bottom: 1rem
+    em.invalid
+        top: 44px
+    em#modalCheckbox-error
+        top: 39px
+        left: 23px
+    
         
 
 @media ( min-width: 320px ) and ( max-width: 369px )
@@ -226,10 +253,7 @@
         &__button
             min-width: 100%
             
-@media screen and ( max-width: 376px )
     .ymap-container 
         margin-bottom: 41px
-    #map-yandex 
-        max-width: 340px
         width: 100%
-        max-height: 255px
+        height: 255px

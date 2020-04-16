@@ -187,6 +187,7 @@ $(document).ready(function () {
         },
         userPhone:{
           required: "Телефон обязателен",
+          minlength: "Введите корректный номер"
         },
         footerCheckbox: "Нажмите, чтобы согласиться",
         userQuestion: {
