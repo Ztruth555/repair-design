@@ -557,6 +557,9 @@ img {
 input {
   outline: none; }
 
+::-moz-placeholder, :-moz-placeholder {
+  opacity: 1; }
+
 .header {
   position: fixed;
   left: 0;
@@ -680,6 +683,7 @@ input {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    position: relative;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -691,9 +695,12 @@ input {
     .instagram__link:hover {
       color: #fff; }
     .instagram__link::after {
+      position: absolute;
       content: '';
       width: 51px;
       height: 1px;
+      top: 50%;
+      left: 110%;
       background-color: #E3B873;
       margin-left: 15px; }
 
@@ -855,8 +862,15 @@ input {
 
 .video__play {
   position: relative;
-  margin: auto;
-  cursor: pointer; }
+  display: inline-block;
+  width: 12rem;
+  height: 12rem;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18%;
+  cursor: pointer;
+  transition: 0.4s; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -895,7 +909,8 @@ input {
   font-weight: normal;
   background-color: #E3B873;
   color: #fff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1.214rem 2.6rem;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
 .design {
   position: relative; }
@@ -909,7 +924,8 @@ input {
     background-color: #131313;
     z-index: -1; }
   .design__pricetag {
-    padding: 1.214rem 3.9rem; }
+    padding: 1.214rem 3.9rem;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -921,7 +937,7 @@ input {
     margin: auto;
     margin-bottom: 3.714rem;
     margin-top: -20rem;
-    padding: 2.5rem; }
+    padding: 2.5rem 0; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1013,7 +1029,7 @@ input {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff; }
   .modal__close {
@@ -1264,6 +1280,10 @@ input {
     display: none; }
   .footer__contacts {
     order: 1; }
+  .footer__button {
+    width: 100%; }
+  .policy__label--center {
+    justify-content: start; }
   blockquote.invalid {
     position: absolute;
     left: -48px;

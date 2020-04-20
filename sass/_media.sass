@@ -10,6 +10,12 @@
                 width: 100%
     #controlCheckbox-error
         left: 244px
+        
+// @media all and (-ms-high-contrast:none)
+//     color: green /* IE10 */
+// *::-ms-backdrop, .hero__scroll-down
+//     color: red /* IE11 */
+
 @media screen and ( max-width: 992px)
     .nav
         display: none
@@ -161,6 +167,11 @@
             display: none
         &__contacts
             order: 1
+        &__button
+            width: 100%
+    .policy__label--center 
+        justify-content: start
+
     blockquote.invalid
         position: absolute
         left: -48px
