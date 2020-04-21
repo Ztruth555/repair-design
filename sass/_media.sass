@@ -10,7 +10,6 @@
                 width: 100%
     #controlCheckbox-error
         left: 244px
-        
 // @media all and (-ms-high-contrast:none)
 //     color: green /* IE10 */
 // *::-ms-backdrop, .hero__scroll-down
@@ -30,8 +29,10 @@
                 flex-basis: 50%
             img
                 width: 100%
-    // blockquote.invalid
-    //     top: -10px
+    .button
+        box-shadow: none
+                
+
 @media screen and ( min-width: 769px )
   .swiper-container-horizontal>.swiper-pagination-bullets
     width: auto
@@ -140,7 +141,7 @@
             margin-bottom: -24px
         &__text
             // color: $dark
-            font-size: 1.32rem
+            font-size: 1.1rem
             margin-bottom: 2.16rem
         &__input
             color: $light
@@ -171,7 +172,8 @@
             width: 100%
     .policy__label--center 
         justify-content: start
-
+    .section-title__word::after
+        display: none
     blockquote.invalid
         position: absolute
         left: -48px
@@ -183,10 +185,15 @@
         
         
 @media screen and ( max-width: 570px)
+    .hero
+        &__content
+            width: 100%
     .container
         display: flex
         justify-content: center
         flex-direction: column
+        &__title
+            font-size: 1.94rem
     .menu
         width: 90%
     .contacts
@@ -201,21 +208,23 @@
         font-size: 1.64rem
     .control
         &__form
-            width: 23rem
+            width: 100%
             // margin: 0
+    .input
+        border-bottom: 1px solid #fff
     .hero
         height: auto
         &__scroll-down
             display: none
         &__content
-            max-width: 22.86rem
+            max-width: 100%
             margin: 0 auto
         &__text
-            font-size: 1.29rem
+            font-size: 1.39rem
             margin-bottom: 2.28rem
         &__button
             display: block
-            min-width: 22.86rem
+            min-width: 100%
             margin-bottom: 1.85rem
     .swiper
         &-slide
@@ -256,6 +265,23 @@
     em#modalCheckbox-error
         top: 39px
         left: 23px
+
+@media screen and ( max-width: 376px )
+    .control
+        &__text
+            max-width: 340px
+            font-size: 1.15rem
+            line-height: 169.8%
+    .hero
+        &__title
+            max-width: 330px
+            font-size: 1.94rem
+        &__text
+            font-size: 1.58rem
+    .menu
+        width: 100%
+
+
     
         
 

@@ -360,7 +360,7 @@ template {
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.7);
+  border-bottom: 1px solid #363636;
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
@@ -932,7 +932,7 @@ input {
   padding-top: 3rem;
   margin-top: 25rem; }
   .footer__wrap {
-    background-color: #181818;
+    background: #181818 url("../img/footer-form-bg.png") no-repeat center/cover;
     max-width: 63.07rem;
     margin: auto;
     margin-bottom: 3.714rem;
@@ -1029,7 +1029,7 @@ input {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
+    background: #131313 url("../img/bg-lines.png") no-repeat center/cover;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff; }
   .modal__close {
@@ -1140,7 +1140,9 @@ input {
   .swiper-slide__text {
     flex-basis: 50%; }
   .swiper-slide img {
-    width: 100%; } }
+    width: 100%; }
+  .button {
+    box-shadow: none; } }
 
 @media screen and (min-width: 769px) {
   .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -1246,7 +1248,7 @@ input {
     flex-direction: column;
     margin-bottom: -24px; }
   .control__text {
-    font-size: 1.32rem;
+    font-size: 1.1rem;
     margin-bottom: 2.16rem; }
   .control__input {
     color: #fff;
@@ -1284,6 +1286,8 @@ input {
     width: 100%; }
   .policy__label--center {
     justify-content: start; }
+  .section-title__word::after {
+    display: none; }
   blockquote.invalid {
     position: absolute;
     left: -48px;
@@ -1294,10 +1298,14 @@ input {
     top: -50px; } }
 
 @media screen and (max-width: 570px) {
+  .hero__content {
+    width: 100%; }
   .container {
     display: flex;
     justify-content: center;
     flex-direction: column; }
+    .container__title {
+      font-size: 1.94rem; }
   .menu {
     width: 90%; }
   .contacts {
@@ -1311,20 +1319,22 @@ input {
   .title {
     font-size: 1.64rem; }
   .control__form {
-    width: 23rem; }
+    width: 100%; }
+  .input {
+    border-bottom: 1px solid #fff; }
   .hero {
     height: auto; }
     .hero__scroll-down {
       display: none; }
     .hero__content {
-      max-width: 22.86rem;
+      max-width: 100%;
       margin: 0 auto; }
     .hero__text {
-      font-size: 1.29rem;
+      font-size: 1.39rem;
       margin-bottom: 2.28rem; }
     .hero__button {
       display: block;
-      min-width: 22.86rem;
+      min-width: 100%;
       margin-bottom: 1.85rem; }
   .swiper-slide__text {
     flex-basis: 50%; }
@@ -1356,6 +1366,19 @@ input {
   em#modalCheckbox-error {
     top: 39px;
     left: 23px; } }
+
+@media screen and (max-width: 376px) {
+  .control__text {
+    max-width: 340px;
+    font-size: 1.15rem;
+    line-height: 169.8%; }
+  .hero__title {
+    max-width: 330px;
+    font-size: 1.94rem; }
+  .hero__text {
+    font-size: 1.58rem; }
+  .menu {
+    width: 100%; } }
 
 @media (min-width: 320px) and (max-width: 369px) {
   .control__button {
